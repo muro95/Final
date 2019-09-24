@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>P1</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arr1 = [10, 5, 2, 8, -1, 6, 8];
+    let arr2 = [2, 4, 0, 5, 1];
+    let arr3 = [-8, -6, -2, -6, -1, -1 -4];
+
+    function findMaxScore(array) {
+        let maxScore = array[0];
+        for (let i = 0; i < array.length; i++){
+            if (maxScore <= array[i]){
+                maxScore = array[i];
+            }
+        } return maxScore;
+    }
+    console.log(findMaxScore(arr1));
+    console.log(findMaxScore(arr2));
+    console.log(findMaxScore(arr3));
+
+</script>
+</html>

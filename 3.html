@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>P3</title>
+</head>
+<body>
+
+</body>
+<script>
+    function printFibonacci(num) {
+        let a = 0;
+        if (num == 0) return (a);
+        if (num == 1) {
+            a += 1;
+            return (a);
+        } else {
+            return (printFibonacci(num - 1) + printFibonacci(num - 2));
+        }
+    }
+
+    let number = parseInt(prompt("Enter the max range: "));
+    for (let i = 0; i <= number; i++) {
+        console.log(printFibonacci(i));
+    }
+</script>
+</html>
