@@ -26,11 +26,11 @@
     function printFibonacci(numBer) {
         let num1 = 0;
         let num2 = 1;
-        let trungGian;
+        let temp;
         while (num2 < numBer) {
-            trungGian = num2;
+            temp = num2;
             num2 = num1 + num2;
-            num1 = trungGian;
+            num1 = temp;
             document.write(num1 + ' ');
         }
     }
