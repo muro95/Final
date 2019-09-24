@@ -8,20 +8,34 @@
 
 </body>
 <script>
-    function printFibonacci(num) {
-        let a = 0;
-        if (num == 0) return (a);
-        if (num == 1) {
-            a += 1;
-            return (a);
-        } else {
-            return (printFibonacci(num - 1) + printFibonacci(num - 2));
+    // function printFibonacci(num) {
+    //     let a = 0;
+    //     if (num == 0) return (a);
+    //     if (num == 1) {
+    //         a += 1;
+    //         return (a);
+    //     } else {
+    //         return (printFibonacci(num - 1) + printFibonacci(num - 2));
+    //     }
+    // }
+    //
+    // let number = parseInt(prompt("Enter the max range: "));
+    // for (let i = 0; i < number; i++) {
+    //     console.log(printFibonacci(i));
+    // }
+    function printFibonacci(numBer) {
+        let num1 = 0;
+        let num2 = 1;
+        let trungGian;
+        while (num2 < numBer) {
+            trungGian = num2;
+            num2 = num1 + num2;
+            num1 = trungGian;
+            document.write(num1 + ' ');
         }
     }
+    let numBer=parseInt(prompt('input number='));
+    printFibonacci(numBer);
 
-    let number = parseInt(prompt("Enter the max range: "));
-    for (let i = 0; i <= number; i++) {
-        console.log(printFibonacci(i));
-    }
 </script>
 </html>
